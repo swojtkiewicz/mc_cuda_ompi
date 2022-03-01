@@ -1,0 +1,13 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$utilities_8cpp.html#afbbe828f75976156c31a5c534df8fa69" title="Loads simulation settings file. " alt="" coords="149,5,274,32"/>
+<area shape="rect" id="node3" href="$utilities_8cpp.html#a7f71833dcf9e5a516785b06d4f333594" title="Loads cluster hardware parameters. " alt="" coords="115,56,307,83"/>
+<area shape="rect" id="node4" href="$utilities_8cpp.html#ab9fb5b13570c0ab6827ff41a2b2ffab5" title="Calculates number of cluster workers. " alt="" coords="144,107,279,133"/>
+<area shape="rect" id="node5" href="$utilities_8cpp.html#aa2a65a8d301b1379e1825d25e0d37e50" title="Calculates maximum number of photons threads for a single run. Maximum within the cluster workers..." alt="" coords="130,157,293,184"/>
+<area shape="rect" id="node6" href="$utilities_8cpp.html#a38d53363660c19cf8081ce6fd95ece19" title="Loads voxels structure from file. " alt="" coords="154,208,269,235"/>
+<area shape="rect" id="node7" href="$utilities_8cpp.html#ad1c5a63ebaff97d0689813569583bcf7" title="Loads ICG bolus file. " alt="" coords="153,259,269,285"/>
+<area shape="rect" id="node8" href="$utilities_8cpp.html#aa300834d8eca55439d3301aaad2dfdee" title="loadOpticalPropertiesCourse" alt="" coords="108,309,315,336"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a0b65a23fb8fd1438341b44a3e322978f" title="checkGPUDevice" alt="" coords="145,360,278,387"/>
+<area shape="rect" id="node10" href="$main_8cpp.html#ab6d719b25bcd95fc184a2e11c1d36493" title="Shows the progress bar at the console. " alt="" coords="161,411,261,437"/>
+<area shape="rect" id="node11" href="$utilities_8cpp.html#abee2e5db9be34f6b8c2df9f0ae43a16e" title="Save voxelized structure with weights in each voxel to file. " alt="" coords="163,461,259,488"/>
+<area shape="rect" id="node12" href="$utilities_8cpp.html#a0f44c0b8f6619cd9919ac54a726ada95" title="calculateSensitivityFactors" alt="" coords="113,512,309,539"/>
+</map>

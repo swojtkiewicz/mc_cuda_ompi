@@ -1,0 +1,19 @@
+### CUDA_CLUSTER_MONTE_CARLO_BY_SW
+### Settings file for cluster configuration
+### DO NOT edit names of the parameters!
+
+### General cluster parameters
+
+###Hostname is the computer identifier. Run the 'hostname' command on your machine to know it. 
+Hostname:nirfast
+###Number of GPUs to be used for the host
+Machine_GPUs:3
+Number of blocks:64 64 64
+Threads per block:128 128 128
+
+###Now add more machines as needed, the hostname and number of GPUs per node entry, eg.:
+#Hostname:posejdon
+#Machine_GPUs:2
+#Hostname:zeus
+#Machine_GPUs:3
+

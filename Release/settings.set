@@ -1,0 +1,118 @@
+### CUDA_CLUSTER_MONTE_CARLO_BY_SW
+### Settings file
+### DO NOT edit names of the parameters!
+
+### Cluster configuration filename.
+### Please see the file fr details
+Cluster_filename:cluster_settings.set
+
+### General simulation parameters
+MAX time in DTOFs [ps]:5000
+Number of DTOFs samples:256
+Total number of photons:5000000
+#Voxels filename:voxels_transmit_h=60.vox
+#Voxels filename:voxels_head_full_em_det_random.vox
+#Voxels filename:voxels_head_full_em_det_culver.vox
+#Voxels filename:voxels_box.vox
+#Voxels filename:voxels_box_semiinfinite.vox
+#Voxels filename:voxels_head_full_em_det.vox
+Voxels filename:voxels_box_miami2016.vox
+#Voxels filename:voxels_box_mcx_benchmark.vox
+
+### Location of sources and detectors
+### 0 - in voxels structure, used for simulation of time-resolced ICCD camera (each detector voxel collects DTOF)
+### 1 - in separate file defined in "Em_det_filename", use this as a default choice. Warning: if sources and detectors are
+###	defined in the voxels structure (from file defined in "Voxels filename") and "Em_det_in_separate_file:1" program will
+###	stop and rise an error.
+### Em_det_distance_min - minimum source-detector separation in mm, used only when "Em_det_in_separate_file:0"
+### Em_det_distance_max - maximum source-detector separation in mm, used only when "Em_det_in_separate_file:0"
+Em_det_in_separate_file:1
+#Em_det_distance_min:18
+#Em_det_distance_max:22
+#Em_det_filename:em_det_pairs_nirfast_compare.txt
+#Em_det_filename:em_det_pairs_mcx_benchmark.txt
+Em_det_filename:em_det_pairs_miami2016.txt
+#Em_det_filename:em_det_pairs_semiinfinite.txt
+
+### Optical properties change
+### 0 - no changes
+### 1 - series of simulations with changed optical properties, changes are readed from
+###	file defined in file "Optical_properies_filename"
+Optical_properties_change:0
+#Optical_properies_changes_filename:skull_heterogenity_influence.txt
+Optical_properies_changes_filename:opt_prop_diff_eq_comparison.txt
+
+### Voxel values update
+### 0 - do not update voxel structure
+### 1 - reflectance only
+### 2 - fluorescence, generation probability
+### 3 - fluorescence, visiting probability
+Voxels update:1
+
+### Sensitivity factors (if > 0, overrides the "Voxels update" and sets it to 0)
+### 0 - do not calculate
+### 1 - calculate MPP, MTSF and VSF
+Sensitivity factors:0
+
+### optical properties [n g mus muax muam muafx muafm]
+### up to 12 structures! (do not define more than 12)
+### define at least 1 structure
+### one structure in a row
+
+#optical_properties:1.37 0.9 10.0 0.005 0.0 0.0 0.0
+#optical_properties:1.37 0.9 10.0 0.005 0.0180 0.0000159 0.0000041
+#optical_properties:1.4 0.0 1.0 0.005 0.0 0.0 0.0
+
+##skin
+##optical_properties:1.4 0.0 0.86 0.0137 0.0180 0.0000159 0.0000041
+#optical_properties:1.4 0.0 0.86 0.0137 0.0 0.0 0.0
+##skull
+##optical_properties:1.4 0.0 0.89 0.0087 0.0112 0.0000106 0.0000027
+#optical_properties:1.4 0.0 0.89 0.0087 0.0 0.0 0.0
+##CSF
+##optical_properties:1.4 0.0 0.01 0.0022 0.0041 0.0 0.0
+#optical_properties:1.4 0.0 0.01 0.0022 0.0 0.0 0.0
+##gray matter
+##optical_properties:1.4 0.0 0.91 0.0144 0.0192 0.0013518 0.0003478
+#optical_properties:1.4 0.0 0.91 0.0144 0.0 0.0 0.0
+##white matter
+##optical_properties:1.4 0.0 1.04 0.0102 0.0139 0.0009012 0.0002319
+##optical_properties:1.4 0.0 1.04 0.0102 0.0 0.0 0.0
+
+#optical_properties:1.4 0.0 1.0 0.0299 0.00 0.00 0.000
+#optical_properties:1.4 0.0 1.0 0.0299 0.00 0.00 0.000
+#optical_properties:1.4 0.0 1.0 0.0299 0.00 0.00 0.000
+#optical_properties:1.4 0.0 1.0 0.0299 0.00 0.00 0.000
+#optical_properties:1.4 0.0 1.0 0.0299 0.00 0.00 0.000
+
+
+optical_properties:1.4 0.0 1.0 0.0299 0.0192 0.0013518 0.0003478
+optical_properties:1.4 0.0 1.0 0.0299 0.0192 0.0013518 0.0003478
+optical_properties:1.4 0.0 1.0 0.0299 0.0192 0.0013518 0.0003478
+optical_properties:1.4 0.0 1.0 0.0299 0.0192 0.0013518 0.0003478
+optical_properties:1.4 0.0 1.0 0.0299 0.0192 0.0013518 0.0003478
+
+#optical_properties:1.4 0.0 1 0.03 0.0 0.0 0.0
+
+#optical_properties:1.4 0.0 1 0.01 0.005 0.0 0.0
+#optical_properties:1.4 0.0 1 0.01 0.005 0.0 0.0
+#optical_properties:1.4 0.0 1 0.01 0.005 0.0002 0.0001
+
+#optical_properties:1.4 0.0 1.30 0.018 0.0 0.0 0.0
+#optical_properties:1.4 0.0 1.00 0.005 0.0 0.0 0.0
+#optical_properties:1.4 0.0 1.20 0.016 0.0 0.0 0.0
+#optical_properties:1.4 0.0 1.00 0.004 0.0 0.0 0.0
+#optical_properties:1.4 0.0 1.25 0.010 0.0 0.0 0.0
+#optical_properties:1.4 0.0 1.25 0.010 0.005 0.0002 0.0001
+#optical_properties:1.53 0.86 80 0.1 0.0 0.0 0.0
+#optical_properties:1.34 0.8 45 0.1 0.0 0.0 0.0
+#optical_properties:1.4 0.9 30 0.1 0.0 0.0 0.0
+#optical_properties:1.39 0.95 35 0.1 0.0 0.0 0.0
+#optical_properties:1.4 0.8 25 0.1 0.0 0.0 0.0
+#optical_properties:1.38 0.95 30 0.1 0.0 0.0 0.0
+#optical_properties:1.44 0.75 5 0.1 0.0 0.0 0.0
+
+
+
+
+
